@@ -7,6 +7,9 @@
     <!-- reset.css ress -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -29,14 +32,74 @@
         </nav>
     </header>
 
-    <main>
+    <body>
         <div id="main">
             <picture>
-                <source media="(max-width: 600px)" srcset="./img/main-sp.jpg">
-                <img src=".img/main-pc.jpg" alt="">
+                <source media="(max-width: 600px)" srcset="img/main-sp.jpg"/>
+                <img src="img/main-pc.jpg" alt="">
             </picture>
 
         </div>
-    </main>
+
+        <section id="about" class="wrapper">
+            <h2 class="sec-title">About</h2>
+            <ul>
+                <li>ShinCode株式会社</li>
+                <li>web制作会社として設立</li>
+                <li>webサイト・アプリ開発を承ります</li>
+                <li>メールアドレス：xxxxxxx@xxx.com</li>
+            </ul>
+            <p>webサイト制作やアプリ開発を得意としています。また、web講師としても活動しており
+               新人の育成をしたい企業も申し込み承ります。 
+            </p>
+        </section>
+
+        <section id="works" class="wrapper">
+            <h2 class="sec-title">Works</h2>
+            <ul class="wrapper1">
+                <li><img src="img/works1.jpg" alt="works1" width="300"></li>
+                <li><img src="img/works2.jpg" alt="works2" width="300"></li>
+                <li><img src="img/works3.jpg" alt="works3" width="300"></li>
+                <li><img src="img/works4.jpg" alt="works4" width="300"></li>
+                <li><img src="img/works5.jpg" alt="works5" width="300"></li>
+                <li><img src="img/works6.jpg" alt="works6" width="300"></li>
+                <li><img src="img/works2.jpg" alt="works2" width="300"></li>
+                <li><img src="img/works3.jpg" alt="works3" width="300"></li>
+                <li><img src="img/works5.jpg" alt="works5" width="300"></li>
+            </ul>
+        </section>
+
+        <section id="news" class="wrapper">
+            <h2 class="sec-title">news</h2>
+            <dl>
+                <dt>2022/10/29</dt>
+                <dd>本サイトをリリースしました。</dd>
+                <dt>2022/10/29</dt>
+                <dd>本サイトをリリースしました。</dd>
+                <dt>2022/10/29</dt>
+                <dd>本サイトをリリースしました。</dd>
+                <dt>2022/10/29</dt>
+                <dd>本サイトをリリースしました。</dd>
+                <dt>2022/10/29</dt>
+                <dd>本サイトをリリースしました。</dd>
+            </dl>
+        </section>
+
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact</h2>
+            <p>お問い合わせは以下のフォームから</p>
+            <form action="#">
+             <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email"></dd>
+                <dt><label for="content">内容</label></dt>
+                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+             </dl>
+             <div class="button"><input type="submit" value=送信></div>
+            </form>
+        </section>
+    </body>
 </body>
 </html>

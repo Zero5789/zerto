@@ -4,7 +4,12 @@ html {
 
 body {
     color: #24292e;
+    
+    font-family: "Sawarabi Gothic"
+        
+      
 }
+
 
 a {
     text-decoration: none;
@@ -13,6 +18,19 @@ a {
 #header li {
     list-style: none;
     font-size: 1.2rem;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 .sitetitle {
@@ -54,6 +72,136 @@ a {
     opacity: 0.5;
 }
 
+
+
+/* main */
+#main {
+    margin-bottom: 80px;
+}
+
+#main img {
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+/* About */
+#about li {
+    list-style: none;
+}
+
+#about ul li:first-child {
+    margin-bottom: 30px;
+}
+
+#about ul {
+    margin-bottom: 20px;
+}
+
+#about ul li {
+    margin-bottom: 3px;
+}
+
+
+/* works */
+#works li {
+    list-style: none;
+}
+
+.wrapper1 li {
+    max-width: 30%;
+    margin-bottom: 23px;
+}
+
+#works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#works ul li img {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#works ul li img:hover {
+    transform: scale(1.2 , 1.2);
+    opacity: 0.7;
+}
+
+
+/* News */
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+#news dt {
+    width: 20%;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+
+#news dd {
+    width: 80%;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+
+
+/* Contact */
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact dt {
+    width: 15%;
+    margin-bottom: 10%;
+}
+
+#contact dd {
+    width: 85%;
+    margin-bottom: 10%;
+}
+
+#contact dd input,
+#contact dd textarea {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+#contact .button {
+    text-align: center;
+}
+
+#contact .button input {
+    border: 1px solid gray;
+    background-color: gray;
+    width: 200px;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#contact .button input:hover {
+    background-color: #fff;
+    color: #24292e;
+}
+
 /* sp */
 @media screen and (max-width: 600px) {
     .sitetitle {
@@ -71,5 +219,26 @@ a {
     #header li {
         font-size: 0.8rem;
         margin-left: 20px;
+    }
+
+    /* works */
+    #works ul {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Contact */
+    #contact dl {
+        flex-direction: column;
+    }
+
+    #contact dt {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #contact dd {
+        width: 100%;
     }
 }
