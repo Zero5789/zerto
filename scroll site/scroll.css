@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(139, 74, 189), rgb(249, 108, 207));
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding:  80px 100px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}                       
+
+.main-title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.content {
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+.content .image {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.content .text-box {
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    transform: translate(-80px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border-radius: 1px solid;
+}
+
+.content .text-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* セクション2 */
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+.info-title {
+    font-size:1.8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+/* セクション3 */
+.content .image .otintin {
+    object-position: 0% 50%;
+}

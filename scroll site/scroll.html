@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll Reveal Tutorial</title>
+    <link rel="stylesheet" href="scroll.css">
+
+</head>
+<body>
+    <!-- セクション1 -->
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">scroll Reveal Tutorial</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="images/img1.jpg" alt=""> 
+                </div>
+
+                <div class="text-box">
+                    <h3>Shin Code</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Nostrum doloribus facilis 
+                    itaque expedita distinctio optio iusto atque
+                     quisquam culpa doloremque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション2 -->
+     <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Shin Turtorial</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="images/img2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">discription</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis itaque eveniet corrupti consequuntur! Totam rerum odit 
+                        repellat voluptas eum. Quidem ea recusandae placeat deserunt sit.
+                    </p>
+                </div>
+
+            </div>
+     </section>
+
+     <!-- セクション3 -->
+      <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">Shin Code</h3>
+            <div class="content">
+                <div class="info">
+                </div>
+                <div class=image>
+                    <img src="images/img3.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+
+      </section>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script>
+        ScrollReveal({ reset: true, distance: '60px', duration: 2000, delay: 400});
+        ScrollReveal().reveal('.main-title', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.sec-01 .image', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 400, origin: 'right' });
+        ScrollReveal().reveal('.main-title', { delay: 200, origin: '' });
+    
+      </script>
+</body>
+</html>
