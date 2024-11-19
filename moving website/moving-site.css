@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #3135fa, #9738f0);
+    position: absolute;
+    z-index: -1;
+}
+
+nav {
+    padding: 20px;
+}
+
+.logo-area {
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 50px;
+    height: auto;
+} 
